@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 30px;
+  color: #333;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#addTaskBtn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #00c9a7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addTaskBtn:hover {
+  background: #00a68c;
+  transform: scale(1.05);
+}
+
+/* Board Layout */
+.board {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Column Design */
+.column {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  width: 300px;
+  min-height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.column h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 8px;
+}
+
+/* Task Cards */
+.task {
+  background: white;
+  color: #333;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.task:hover {
+  transform: translateY(-4px);
+}
+
+.task p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Buttons inside task */
+.task button {
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+/* Move Buttons */
+.task button:nth-child(2),
+.task button:nth-child(3) {
+  background: #4facfe;
+  color: white;
+}
+
+.task button:nth-child(2):hover,
+.task button:nth-child(3):hover {
+  background: #2b8df5;
+}
+
+/* Delete Button */
+.task button:last-child {
+  background: #ff4d4d;
+  color: white;
+}
+
+.task button:last-child:hover {
+  background: #e60000;
+}
